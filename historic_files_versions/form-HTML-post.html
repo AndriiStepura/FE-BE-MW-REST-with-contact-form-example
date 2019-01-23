@@ -1,0 +1,20 @@
+<link type="text/css" rel="stylesheet" href="style.css" />
+
+<script>
+function sendForm(){
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", yourUrl, true);
+	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.send(JSON.stringify({
+		value: value
+	}));
+}
+</script>
+
+
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfzM7cvQazK0b2hlPt5zFFjMncvMA6Io904DstCGfH75J1uuw/formResponse" target="_self" method="POST">
+	<input type="email" name="emailAddress" placeholder="Enter your E-mail" required>
+	<input type="text" name="entry.1224778685" placeholder="Enter your Name" required>
+	<input type="text" name="entry.512804397" placeholder="Enter your Message" required>
+	<input type="submit" name="submit" value="Submit">
+</form>
