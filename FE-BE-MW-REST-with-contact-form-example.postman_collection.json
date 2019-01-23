@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "09379c81-3f76-47cd-9725-3bf8392b33a6",
+		"name": "FE-BE-MW-REST-with-contact-form-example",
+		"description": "Postman collection for https://github.com/AndriiStepura/FE-BE-MW-REST-with-contact-form-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Google Form",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://docs.google.com/forms/d/e/1FAIpQLSfzM7cvQazK0b2hlPt5zFFjMncvMA6Io904DstCGfH75J1uuw/formResponse",
+					"protocol": "https",
+					"host": [
+						"docs",
+						"google",
+						"com"
+					],
+					"path": [
+						"forms",
+						"d",
+						"e",
+						"1FAIpQLSfzM7cvQazK0b2hlPt5zFFjMncvMA6Io904DstCGfH75J1uuw",
+						"formResponse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post to Google Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emailAddress",
+							"value": "test_from_postman@w2business.pl",
+							"type": "text"
+						},
+						{
+							"key": "entry.1224778685",
+							"value": "Test form name from Postman",
+							"type": "text"
+						},
+						{
+							"key": "entry.512804397",
+							"value": "Test form message from Postman",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://docs.google.com/forms/d/e/1FAIpQLSfzM7cvQazK0b2hlPt5zFFjMncvMA6Io904DstCGfH75J1uuw/formResponse",
+					"protocol": "https",
+					"host": [
+						"docs",
+						"google",
+						"com"
+					],
+					"path": [
+						"forms",
+						"d",
+						"e",
+						"1FAIpQLSfzM7cvQazK0b2hlPt5zFFjMncvMA6Io904DstCGfH75J1uuw",
+						"formResponse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST to OUR BE form.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "postEmail",
+							"value": "test_from_postman_to_our_BE@w2business.pl",
+							"type": "text"
+						},
+						{
+							"key": "postName",
+							"value": "Name in Postman to Our BE",
+							"type": "text"
+						},
+						{
+							"key": "postMessage",
+							"value": "Message from Postman to Our BE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://demo.localhost/form.php",
+					"protocol": "http",
+					"host": [
+						"demo",
+						"localhost"
+					],
+					"path": [
+						"form.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
