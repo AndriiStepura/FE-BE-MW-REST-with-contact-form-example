@@ -1,0 +1,36 @@
+	body {
+		background: #000;
+	}
+
+	form {
+		background: #fff;
+		display:block;
+		width:300px;
+		-webkit-border-radius: 30px;
+		border-radius:30px;
+		padding:20px;
+		 margin-left: auto;
+		margin-right: auto;
+	}
+
+	input {
+		width:100%;
+		font-size:26px;
+		padding: 0 2px;
+		margin: 5px 0;
+	}
+
+	input[type=submit] {
+		background:#ccc; 
+		cursor:pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+	}
+	
+	#formErrors div{
+		background: #d68585;
+		margin: 5px 0;
+		text-align: center;
+		border-radius: 10px;
+		color: #fff;
+	}
